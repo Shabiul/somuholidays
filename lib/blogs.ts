@@ -633,26 +633,7 @@ Here is your **definitive month-by-month 2026 Long Weekend Guide** tailored spec
 
 ---
 
-## Month-by-Month Long Weekends in 2026 (Bangalore Edition)
-
-*The calculations below assume a standard 5-day corporate workweek (Saturday & Sunday off). Where holidays fall on a Tuesday or Thursday, a 1-day leave is highlighted to unlock a 4-day mini-vacation.*
-
-| Month & Dates | Occasion / Holiday | Days Off | Leave Strategy | Best Road Trip from Bangalore |
-| :--- | :--- | :--- | :--- | :--- |
-| **Jan 15–18** (Thu–Sun) | **Makara Sankranti / Pongal** | 4 Days | Take Leave on Friday (Jan 16) | **Chikmagalur** or **Hassan (Belur-Halebeedu)** |
-| **Jan 24–26** (Sat–Mon) | **Republic Day** | 3 Days | None (Natural 3-Day Weekend) | **Mysuru & Srirangapatna** (Expressway drive) |
-| **Mar 20–22** (Fri–Sun) | **Eid-ul-Fitr / Ramzan** | 3 Days | None (Natural 3-Day Weekend) | **Coorg Coffee Plantations** |
-| **Apr 03–05** (Fri–Sun) | **Good Friday & Easter** | 3 Days | None (Natural 3-Day Weekend) | **Ooty & Coonoor Hill Station** |
-| **May 01–03** (Fri–Sun) | **May Day / Buddha Purnima** | 3 Days | None (Natural 3-Day Weekend) | **Kabini & Nagarhole Wildlife Safari** |
-| **Jun 26–28** (Fri–Sun) | **Muharram** | 3 Days | None (Natural 3-Day Weekend) | **Sakleshpur Monsoon Mist Drive** |
-| **Aug 14–17** (Fri–Mon) | **Independence Day Weekend** | 4 Days | Take Leave on Monday (Aug 17) | **Wayanad, Kerala** (Tea garden waterfalls) |
-| **Sep 04–06** (Fri–Sun) | **Ganesh Chaturthi** | 3 Days | None (Natural 3-Day Weekend) | **Hampi UNESCO Heritage Ruins** |
-| **Oct 02–04** (Fri–Sun) | **Gandhi Jayanti** | 3 Days | None (Natural 3-Day Weekend) | **Yercaud or BR Hills** |
-| **Oct 17–20** (Sat–Tue) | **Maha Navami & Dussehra** | 4 Days | Take Leave on Monday (Oct 19) | **Mysore Dasara** or **Coorg Estate Retreat** |
-| **Nov 07–10** (Sat–Tue) | **Deepavali & Balipadyami** | 4 Days | Take Leave on Monday (Nov 09) | **Gokarna & Murudeshwar Coastal Tour** |
-| **Nov 21–24** (Sat–Tue) | **Guru Nanak Jayanti** | 4 Days | Take Leave on Monday (Nov 23) | **Pondicherry French Colony & Auroville** |
-| **Dec 25–27** (Fri–Sun) | **Christmas** | 3 Days | None (Natural 3-Day Weekend) | **South Goa (Palolem & Agonda)** |
-| **Dec 25–Jan 03** | **Year-End Mega Break** | **10 Days** | Take 4 Leaves (Dec 28, 29, 30, 31) | **Grand South India Tour (Kerala / Coastal)** |
+<!-- PLANNER_EMBED -->
 
 ---
 
