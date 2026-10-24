@@ -34,7 +34,7 @@ export default function AboutHero() {
             <div className={styles.photo}>
               <Image
                 src="/about card.jpeg"
-                alt="Somu Holidays fleet, Bengaluru"
+                alt="Somu Holidays buses and cars parked together at the Rajajinagar base, Bengaluru"
                 fill
                 sizes="(min-width: 768px) 640px, 92vw"
                 priority

@@ -5,6 +5,7 @@ import SiteHeader from "@/components/SiteHeader/SiteHeader";
 import SiteFooter from "@/components/SiteFooter/SiteFooter";
 import FloatingActions from "@/components/FloatingActions/FloatingActions";
 import FleetSection from "@/components/FleetSection/FleetSection";
+import BusPageLinks from "@/components/BusPageLinks/BusPageLinks";
 import CtaSection from "@/components/CtaSection/CtaSection";
 import FaqSection from "@/components/FaqSection/FaqSection";
 import type { LocationSeo } from "@/lib/seo-locations";
@@ -107,6 +108,8 @@ export default function LocationSeoPage({ location }: { location: LocationSeo })
         </section>
 
         <FleetSection />
+
+        <BusPageLinks />
 
         <CtaSection />
 

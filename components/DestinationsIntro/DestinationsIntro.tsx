@@ -24,7 +24,7 @@ export default function DestinationsIntro() {
           <div className={styles.photo}>
             <Image
               src="/heritaage background image.jpeg"
-              alt="Karnataka heritage site"
+              alt="Historic Karnataka heritage monument visited on Somu Holidays tour packages"
               fill
               sizes="320px"
               priority

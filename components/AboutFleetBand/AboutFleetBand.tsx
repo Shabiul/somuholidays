@@ -34,7 +34,7 @@ export default function AboutFleetBand() {
               <div className={styles.photo}>
                 <Image
                   src={v.img.startsWith("/") ? v.img : unsplash(v.img, 700)}
-                  alt={v.name}
+                  alt={`${v.name} for hire from Somu Holidays, Bengaluru`}
                   fill
                   sizes="(min-width: 768px) 220px, 44vw"
                 />

@@ -1,0 +1,14 @@
+.wrap { padding: 28px; border-radius: var(--radius); background: var(--ivory); border: 2px solid var(--line); }
+.title { font-size: 1.375rem; margin: 0 0 8px; color: var(--forest-950); }
+.lead { margin: 0 0 20px; color: var(--muted); line-height: 1.7; }
+.fields { display: grid; gap: 16px; grid-template-columns: 1fr; margin-bottom: 20px; }
+@media (min-width: 768px) { .fields { grid-template-columns: 2fr 1fr 1fr; } }
+.fields label { display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: .9375rem; color: var(--forest-950); }
+.fields select, .fields input { padding: 12px 14px; border-radius: 10px; border: 1px solid var(--line); font: inherit; background: #fff; }
+.result { margin: 0 0 12px; display: grid; gap: 8px; }
+.result div { display: flex; justify-content: space-between; gap: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+.result dt { color: var(--muted); }
+.result dd { margin: 0; font-weight: 700; color: var(--forest-950); }
+.total dt { font-weight: 700; color: var(--forest-950); }
+.total dd { font-size: 1.375rem; color: var(--terracotta-600); }
+.note { margin: 0 0 18px; font-size: .8125rem; color: var(--muted); line-height: 1.6; }

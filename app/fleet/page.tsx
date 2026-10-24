@@ -5,6 +5,7 @@ import FloatingActions from "@/components/FloatingActions/FloatingActions";
 import FleetHero from "@/components/FleetHero/FleetHero";
 import FleetSection from "@/components/FleetSection/FleetSection";
 import GroupTravelBanner from "@/components/GroupTravelBanner/GroupTravelBanner";
+import BusPageLinks from "@/components/BusPageLinks/BusPageLinks";
 import CtaSection from "@/components/CtaSection/CtaSection";
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function FleetPage() {
         <FleetHero />
         <FleetSection showAll />
         <GroupTravelBanner />
+        <BusPageLinks />
         <CtaSection />
       </main>
       <SiteFooter />

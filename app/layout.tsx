@@ -99,14 +99,6 @@ const JSON_LD = {
         latitude: "12.9897",
         longitude: "77.5539",
       },
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          opens: "00:00",
-          closes: "23:59",
-        },
-      ],
       areaServed: [
         "Bengaluru",
         "Rajajinagar",
@@ -115,13 +107,6 @@ const JSON_LD = {
         "South India",
       ],
       sameAs: Object.values(SITE.social),
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "148",
-        bestRating: "5",
-        worstRating: "1",
-      },
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Transportation and Tour Services",

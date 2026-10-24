@@ -35,7 +35,7 @@ export default function FleetHero() {
             <div className={styles.photo}>
               <Image
                 src="/our fleet card.jpeg"
-                alt="Somu Holidays fleet, Bengaluru"
+                alt="Somu Holidays fleet of Innova, Innova Crysta and 21 and 25 seater AC buses for hire in Bengaluru"
                 fill
                 sizes="(min-width: 768px) 640px, 92vw"
                 priority

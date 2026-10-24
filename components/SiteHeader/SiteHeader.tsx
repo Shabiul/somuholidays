@@ -67,7 +67,7 @@ export default function SiteHeader({ alwaysSolid = false }: { alwaysSolid?: bool
       >
         <div className={`container ${styles.nav}`}>
           <Link href="/" className={styles.brand} aria-label="Somu Holidays home">
-            <Image src="/logo.jpeg" alt="" width={44} height={44} className={styles.brandMark} priority />
+            <Image src="/logo.jpeg" alt="Somu Holidays logo" width={44} height={44} className={styles.brandMark} priority />
             <span className={styles.brandText}>
               <strong>SOMU HOLIDAYS</strong>
               <span>Tours &amp; Travels</span>
@@ -118,7 +118,7 @@ export default function SiteHeader({ alwaysSolid = false }: { alwaysSolid?: bool
           >
             <div className={styles.drawerHead}>
               <Link href="/" className={styles.brand} onClick={() => setOpen(false)}>
-                <Image src="/logo.jpeg" alt="" width={44} height={44} className={styles.brandMark} />
+                <Image src="/logo.jpeg" alt="Somu Holidays logo" width={44} height={44} className={styles.brandMark} />
                 <span className={styles.brandText}>
                   <strong>SOMU HOLIDAYS</strong>
                   <span>Tours &amp; Travels</span>

@@ -18,6 +18,10 @@
     "per kilometre"
   ],
   "dynamicRoutes": [
+    "/bus-rental-near-me",
+    "/mini-bus-rental-near-me",
+    "/21-seater-mini-bus-rental",
+    "/21-seater-bus-for-hire",
     "/destinations/mysuru",
     "/destinations/coorg",
     "/destinations/chikmagalur",
@@ -57,17 +61,17 @@
     ],
     "/21-seater-bus-rental-bangalore": [
       {
-        "src": "/21 SEATER.jpeg",
+        "src": "/21-seater-luxury-ac-bus-bangalore.jpeg",
         "alt": "21 Seater Luxury AC Bus Rental in Bangalore with Pushback Seats - Somu Holidays"
       },
       {
-        "src": "/25 seater bus2.jpeg",
+        "src": "/25-seater-ac-bus-bangalore.jpeg",
         "alt": "25 Seater and 21 Seater Tourist Bus Fleet in Bangalore - Somu Holidays"
       }
     ],
     "/fleet": [
       {
-        "src": "/21 SEATER.jpeg",
+        "src": "/21-seater-luxury-ac-bus-bangalore.jpeg",
         "alt": "21 Seater Bus on Rent Bangalore"
       },
       {
@@ -87,13 +91,13 @@
         "alt": "Toyota Innova 7 Seater SUV Bangalore"
       },
       {
-        "src": "/25 seater bus2.jpeg",
+        "src": "/25-seater-ac-bus-bangalore.jpeg",
         "alt": "25 Seater Luxury Tourist Bus Bangalore"
       }
     ],
     "/blog/21-seater-bus-rental-bangalore-guide": [
       {
-        "src": "/21 SEATER.jpeg",
+        "src": "/21-seater-luxury-ac-bus-bangalore.jpeg",
         "alt": "21 Seater Bus Rental Rates and Specifications Guide Bangalore"
       }
     ],
@@ -137,6 +141,30 @@
       {
         "src": "/blog-long-weekend-bangalore.jpg",
         "alt": "Long Weekends 2026 Road Trips from Bangalore Holiday Planner - Somu Holidays"
+      }
+    ],
+    "/21-seater-bus-for-hire": [
+      {
+        "src": "/21-seater-luxury-ac-bus-bangalore.jpeg",
+        "alt": "21 seater bus for hire in Bangalore - Somu Holidays AC bus with chauffeur"
+      }
+    ],
+    "/21-seater-mini-bus-rental": [
+      {
+        "src": "/21-seater-luxury-ac-bus-bangalore.jpeg",
+        "alt": "21 seater mini bus rental in Bangalore - Somu Holidays AC mini bus"
+      }
+    ],
+    "/mini-bus-rental-near-me": [
+      {
+        "src": "/21-seater-luxury-ac-bus-bangalore.jpeg",
+        "alt": "Mini bus rental near me in Bangalore - Somu Holidays 21 and 25 seater AC mini buses"
+      }
+    ],
+    "/bus-rental-near-me": [
+      {
+        "src": "/21-seater-luxury-ac-bus-bangalore.jpeg",
+        "alt": "Bus rental near me in Bangalore - Somu Holidays AC buses with driver"
       }
     ]
   }

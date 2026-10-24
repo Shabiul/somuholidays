@@ -32,7 +32,7 @@ export default function ServicesHero() {
             <div className={styles.photo}>
               <Image
                 src="/CRYSTA INTERIOR.jpeg"
-                alt="Somu Holidays vehicle interior"
+                alt="Interior of a Somu Holidays Innova Crysta with leather seats"
                 fill
                 sizes="(min-width: 768px) 640px, 92vw"
                 priority

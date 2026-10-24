@@ -6,6 +6,7 @@ import SiteFooter from "@/components/SiteFooter/SiteFooter";
 import FloatingActions from "@/components/FloatingActions/FloatingActions";
 import Icon, { type IconName } from "@/components/Icon";
 import FaqSection, { type FaqItem } from "@/components/FaqSection/FaqSection";
+import BusPageLinks from "@/components/BusPageLinks/BusPageLinks";
 import CtaSection from "@/components/CtaSection/CtaSection";
 import ReviewsSection from "@/components/ReviewsSection/ReviewsSection";
 import { SITE, waLink } from "@/lib/site";
@@ -16,7 +17,7 @@ const PAGE_DESC =
   "Hire a 21-seater luxury AC bus rental in Bangalore at ₹37/km. Pushback 2x1 seats, luggage boot, verified highway chauffeur, and doorstep Bangalore pickup.";
 
 export const metadata: Metadata = {
-  title: PAGE_TITLE,
+  title: { absolute: PAGE_TITLE },
   description: PAGE_DESC,
   alternates: { canonical: "/21-seater-bus-rental-bangalore" },
   keywords: [
@@ -35,13 +36,13 @@ export const metadata: Metadata = {
     description: PAGE_DESC,
     url: `${SITE.url}/21-seater-bus-rental-bangalore`,
     type: "website",
-    images: [{ url: `${SITE.url}/21 SEATER.jpeg`, width: 1200, height: 675, alt: "21 Seater Luxury AC Bus Rental in Bangalore with Pushback Seats - Somu Holidays" }],
+    images: [{ url: `${SITE.url}/21-seater-luxury-ac-bus-bangalore.jpeg`, width: 1200, height: 675, alt: "21 Seater Luxury AC Bus Rental in Bangalore with Pushback Seats - Somu Holidays" }],
   },
   twitter: {
     card: "summary_large_image",
     title: PAGE_TITLE,
     description: PAGE_DESC,
-    images: [`${SITE.url}/21 SEATER.jpeg`],
+    images: [`${SITE.url}/21-seater-luxury-ac-bus-bangalore.jpeg`],
   },
 };
 
@@ -166,7 +167,7 @@ export default function Seater21BusPage() {
         "@id": `${SITE.url}/21-seater-bus-rental-bangalore#product`,
         name: "21 Seater Luxury AC Bus Rental in Bangalore",
         description: PAGE_DESC,
-        image: `${SITE.url}/21 SEATER.jpeg`,
+        image: `${SITE.url}/21-seater-luxury-ac-bus-bangalore.jpeg`,
         vehicleConfiguration: "21 Passenger Seats + 1 Chauffeur, 2x1 Pushback Recliner Layout",
         fuelType: "Diesel",
         brand: { "@type": "Brand", name: SITE.name },
@@ -197,13 +198,6 @@ export default function Seater21BusPage() {
             },
           },
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.9",
-          reviewCount: "184",
-          bestRating: "5",
-          worstRating: "1",
-        },
       },
       {
         "@type": "BreadcrumbList",
@@ -219,7 +213,7 @@ export default function Seater21BusPage() {
         name: `${SITE.name} Tours & Travels`,
         url: SITE.url,
         logo: `${SITE.url}/logo.jpeg`,
-        image: `${SITE.url}/21 SEATER.jpeg`,
+        image: `${SITE.url}/21-seater-luxury-ac-bus-bangalore.jpeg`,
         telephone: SITE.phonePrimaryTel,
         priceRange: "₹₹",
         geo: {
@@ -321,7 +315,7 @@ export default function Seater21BusPage() {
                   aria-label="21 Seater Luxury AC Bus Bangalore - Click to Book Online"
                 >
                   <Image
-                    src="/21 SEATER.jpeg"
+                    src="/21-seater-luxury-ac-bus-bangalore.jpeg"
                     alt="21 Seater Luxury AC Bus on rent in Bangalore with pushback seats and luggage boot"
                     title="21 Seater AC Bus Rental Bangalore - Somu Holidays Fleet"
                     fill
@@ -724,7 +718,9 @@ export default function Seater21BusPage() {
         </noscript>
 
         {/* CTA Banner */}
-        <CtaSection bgImage="/21 SEATER.jpeg" />
+        <BusPageLinks />
+
+        <CtaSection bgImage="/21-seater-luxury-ac-bus-bangalore.jpeg" />
       </main>
       <SiteFooter />
       <FloatingActions />

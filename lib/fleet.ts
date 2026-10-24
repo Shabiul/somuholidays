@@ -75,7 +75,7 @@ export const FLEET: Vehicle[] = [
     qty: 3,
     price: 37,
     bata: 800,
-    img: "/21 SEATER.jpeg",
+    img: "/21-seater-luxury-ac-bus-bangalore.jpeg",
     badge: "Most Popular for Groups",
     popular: true,
   },
@@ -89,7 +89,7 @@ export const FLEET: Vehicle[] = [
     qty: 2,
     price: 38,
     bata: 800,
-    img: "/25 seater bus2.jpeg",
+    img: "/25-seater-ac-bus-bangalore.jpeg",
   },
 ];
 

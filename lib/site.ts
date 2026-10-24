@@ -17,6 +17,10 @@ export const SITE = {
   address: "#1406, 5th Main Rd, D-Block, 2nd Stage, Rajajinagar, Bengaluru, Karnataka 560010",
   whatsappNumber: "919380958852", // country code + number, no "+" or spaces
   whatsappDefaultMessage: "Hi, I'm interested in your services.",
+  // Must mirror the live Google Business Profile (checked 2026-10-24: 4.7 from 12 reviews,
+  // closes 11 pm). Update these when the profile changes — never ahead of it.
+  googleRating: { value: "4.7", count: "12" },
+  closesAt: "23:00",
   social: {
     instagram: "https://www.instagram.com/somuholidays04/",
     facebook: "https://www.facebook.com/share/1EkqNvrcoyf/",

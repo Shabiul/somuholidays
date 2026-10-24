@@ -12,6 +12,7 @@ import DestinationsPreview from "@/components/DestinationsPreview/DestinationsPr
 import AboutSection from "@/components/AboutSection/AboutSection";
 import ReviewsSection from "@/components/ReviewsSection/ReviewsSection";
 import CtaSection from "@/components/CtaSection/CtaSection";
+import BusPageLinks from "@/components/BusPageLinks/BusPageLinks";
 import FaqSection from "@/components/FaqSection/FaqSection";
 
 export default function HomePage() {
@@ -23,6 +24,7 @@ export default function HomePage() {
         <TrustMarquee />
         <FleetSection />
         <GroupTravelBanner />
+        <BusPageLinks />
         <AboutSection />
         <ServicesSection limit={3} />
         <HowItWorks />

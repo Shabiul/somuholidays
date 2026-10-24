@@ -1,0 +1,6 @@
+.list { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 16px; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .list { grid-template-columns: 1fr 1fr; } }
+.list li { padding: 18px 22px; border-radius: var(--radius); background: var(--ivory); border: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px; }
+.list a { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 1.0625rem; color: var(--forest-900); text-decoration: underline; text-underline-offset: 3px; }
+.list a:hover { color: var(--terracotta-600); }
+.list span { color: var(--muted); line-height: 1.6; font-size: .9375rem; }

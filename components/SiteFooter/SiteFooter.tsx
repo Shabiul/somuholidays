@@ -14,7 +14,7 @@ export default function SiteFooter() {
         <div className={styles.grid}>
           <div className={styles.about}>
             <Link href="/" className={styles.brand}>
-              <Image src="/logo.jpeg" alt="" width={44} height={44} className={styles.brandMark} />
+              <Image src="/logo.jpeg" alt="Somu Holidays logo" width={44} height={44} className={styles.brandMark} />
               <span className={styles.brandText}>
                 <strong>SOMU HOLIDAYS</strong>
                 <span>Tours &amp; Travels</span>
@@ -53,6 +53,10 @@ export default function SiteFooter() {
             <h4>Core Services</h4>
             <ul className={styles.links}>
               <li><Link href="/21-seater-bus-rental-bangalore" title="21 Seater Luxury AC Bus Rental in Bangalore">21 Seater Bus Rental (₹37/km)</Link></li>
+              <li><Link href="/21-seater-bus-for-hire">21 Seater Bus for Hire</Link></li>
+              <li><Link href="/21-seater-mini-bus-rental">21 Seater Mini Bus Rental</Link></li>
+              <li><Link href="/mini-bus-rental-near-me">Mini Bus Rental Near Me</Link></li>
+              <li><Link href="/bus-rental-near-me">Bus Rental Near Me</Link></li>
               <li><Link href="/taxi-service-bangalore">Bangalore Taxi Service</Link></li>
               <li><Link href="/contact#book">Cab &amp; Airport Transport</Link></li>
               <li><Link href="/destinations">Domestic Tours</Link></li>

@@ -13,7 +13,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Call, WhatsApp or visit Somu Holidays Tours and Travels in Rajajinagar, Bengaluru — available 24×7 for bookings, enquiries and on-trip support.",
+    "Call, WhatsApp or visit Somu Holidays Tours and Travels in Rajajinagar, Bengaluru — open until 11 pm for bookings and enquiries.",
   alternates: { canonical: "/contact" },
 };
 
@@ -22,7 +22,7 @@ export default function ContactPage() {
     <>
       <SiteHeader alwaysSolid />
       <main>
-        <div className={styles.photoWrap} style={{ backgroundImage: "url('/kurakoram.jpeg')" }}>
+        <div className={styles.photoWrap} style={{ backgroundImage: "url('/kurakoram.jpeg')" }} role="img" aria-label="Scenic Karnataka landscape, a destination for Somu Holidays trips">
           <section className={styles.heroInner}>
             <div className="container">
               <div className="crumb">

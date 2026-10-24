@@ -301,7 +301,7 @@ export default async function BlogPostPage({ params }: { params: PageParams }) {
           id="post-faqs"
         />
 
-        <CtaSection bgImage="/21 SEATER.jpeg" />
+        <CtaSection bgImage="/21-seater-luxury-ac-bus-bangalore.jpeg" />
       </main>
       <SiteFooter />
       <FloatingActions />

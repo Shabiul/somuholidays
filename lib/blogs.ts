@@ -27,7 +27,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "7 min read",
     author: "Somashekhar B H",
     category: "Bus Rentals & Group Travel",
-    heroImg: "/21 SEATER.jpeg",
+    heroImg: "/21-seater-luxury-ac-bus-bangalore.jpeg",
     heroImgAlt: "21 seater luxury AC bus rental in Bangalore by Somu Holidays parked and ready for group boarding",
     heroImgTitle: "21 Seater Luxury AC Bus Rental Bangalore - Somu Holidays",
     excerpt:

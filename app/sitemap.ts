@@ -3,6 +3,8 @@ import { SITE } from "@/lib/site";
 import { getAllSlugs } from "@/lib/destinations";
 import { getAllRouteSlugs } from "@/lib/seo-routes";
 import { getAllBlogSlugs } from "@/lib/blogs";
+import { BUS_SEO_PAGES } from "@/lib/bus-seo-pages";
+import { BUS_PAGES_LAST_UPDATED } from "@/lib/bus-seo-shared";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url;
@@ -22,6 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/privacy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/terms`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
   ];
+
+  const busRoutes: MetadataRoute.Sitemap = BUS_SEO_PAGES.map((p) => ({
+    url: `${base}/${p.slug}`,
+    lastModified: new Date(BUS_PAGES_LAST_UPDATED),
+    changeFrequency: "weekly",
+    priority: 0.9,
+  }));
 
   const destinationRoutes: MetadataRoute.Sitemap = getAllSlugs().map((slug) => ({
     url: `${base}/destinations/${slug}`,
@@ -44,5 +53,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...destinationRoutes, ...seoRouteRoutes, ...blogRoutes];
+  return [...staticRoutes, ...busRoutes, ...destinationRoutes, ...seoRouteRoutes, ...blogRoutes];
 }

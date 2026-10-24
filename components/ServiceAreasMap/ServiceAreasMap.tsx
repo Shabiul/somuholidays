@@ -70,7 +70,7 @@ export default function ServiceAreasMap() {
             {CITIES.map((c, i) => (
               <Reveal key={c.slug} delay={i * 0.06} className={styles.cityCard}>
                 <div className={styles.cityPhoto}>
-                  <Image src={unsplash(c.img, 400)} alt={c.name} fill sizes="88px" />
+                  <Image src={unsplash(c.img, 400)} alt={`${c.name} - destination reached by Somu Holidays cab and bus from Bengaluru`} fill sizes="88px" />
                 </div>
                 <div>
                   <Link href={`/destinations/${c.slug}`} className={styles.cityName}>

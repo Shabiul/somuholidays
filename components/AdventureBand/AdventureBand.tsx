@@ -19,7 +19,7 @@ export default function AdventureBand() {
           </p>
           <div className={styles.contact}>
             <div className={styles.photo}>
-              <Image src="/about card.jpeg" alt="" fill sizes="64px" />
+              <Image src="/about card.jpeg" alt="Somu Holidays team and fleet in Bengaluru" fill sizes="64px" />
             </div>
             <div>
               <Link href="/contact#book" className={`btn btnPrimary ${styles.btn}`}>

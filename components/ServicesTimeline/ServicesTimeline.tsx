@@ -35,7 +35,7 @@ export default function ServicesTimeline() {
               <div className={styles.dot} aria-hidden="true" />
               <div className={styles.card}>
                 <div className={styles.photo}>
-                  <Image src={s.img} alt={s.title} fill sizes="(min-width: 640px) 220px, 140px" />
+                  <Image src={s.img} alt={`${s.title} - Somu Holidays travel service step`} fill sizes="(min-width: 640px) 220px, 140px" />
                 </div>
                 <div className={styles.cardBody}>
                   <span className={styles.num}>{String(i + 1).padStart(2, "0")}</span>
