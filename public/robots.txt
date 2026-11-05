@@ -14,3 +14,6 @@ User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://www.somuholidays.com/sitemap.xml
+Sitemap: https://www.somuholidays.com/sitemap-pages.xml
+Sitemap: https://www.somuholidays.com/sitemap-images.xml
+Sitemap: https://www.somuholidays.com/sitemap-videos.xml
