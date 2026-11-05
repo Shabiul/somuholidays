@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Icon from "@/components/Icon";
 import Reveal from "@/components/Reveal";
 import styles from "./DestinationsIntro.module.css";
@@ -21,15 +22,22 @@ export default function DestinationsIntro() {
         </Reveal>
 
         <Reveal className={styles.photoCol} delay={0.1}>
-          <div className={styles.photo}>
+          <Link
+            href="/destinations"
+            className={styles.photo}
+            title="Karnataka heritage tour packages - Somu Holidays Bengaluru"
+            aria-label="Explore Karnataka heritage tour destinations with Somu Holidays"
+            style={{ display: "block", position: "relative" }}
+          >
             <Image
               src="/heritaage background image.jpeg"
               alt="Historic Karnataka heritage monument visited on Somu Holidays tour packages"
+              title="Karnataka Heritage Tours - Somu Holidays Bengaluru"
               fill
               sizes="320px"
               priority
             />
-          </div>
+          </Link>
           <div className={styles.badge} aria-hidden="true">
             <svg viewBox="0 0 140 140" className={styles.badgeSpin}>
               <circle cx="70" cy="70" r="68" />

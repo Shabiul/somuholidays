@@ -29,19 +29,31 @@ export default function AboutFleetBand() {
         </Reveal>
 
         <div className={styles.grid}>
-          {vehicles.map((v, i) => (
-            <Reveal key={v.slug} delay={i * 0.08} className={styles.item}>
-              <div className={styles.photo}>
-                <Image
-                  src={v.img.startsWith("/") ? v.img : unsplash(v.img, 700)}
-                  alt={`${v.name} for hire from Somu Holidays, Bengaluru`}
-                  fill
-                  sizes="(min-width: 768px) 220px, 44vw"
-                />
-              </div>
-              <span>{v.name}</span>
-            </Reveal>
-          ))}
+          {vehicles.map((v, i) => {
+            const targetHref = v.slug === "bus-21" ? "/21-seater-bus-rental-bangalore" : "/fleet";
+            const titleText = `${v.name} (${v.seats} Seater) - Somu Holidays Bangalore`;
+            const altText = `${v.name} rental in Bangalore - ${v.seats} seater ${v.tag} with chauffeur`;
+            return (
+              <Reveal key={v.slug} delay={i * 0.08} className={styles.item}>
+                <Link
+                  href={targetHref}
+                  className={styles.photo}
+                  title={titleText}
+                  aria-label={`View details for ${v.name}`}
+                  style={{ display: "block", position: "relative" }}
+                >
+                  <Image
+                    src={v.img.startsWith("/") ? v.img : unsplash(v.img, 700)}
+                    alt={altText}
+                    title={titleText}
+                    fill
+                    sizes="(min-width: 768px) 220px, 44vw"
+                  />
+                </Link>
+                <span>{v.name}</span>
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -25,9 +25,21 @@ export default function GalleryPreview() {
         <div className={styles.grid}>
           {PREVIEW.map((item, i) => (
             <Reveal key={`${item.src}-${i}`} delay={(i % 3) * 0.06} style={{ height: "100%" }}>
-              <div className={styles.tile}>
-                <Image src={item.src} alt={item.caption} fill sizes="(min-width: 1024px) 16vw, 33vw" />
-              </div>
+              <Link
+                href="/gallery"
+                className={styles.tile}
+                title={`${item.caption} - View Somu Holidays Gallery`}
+                aria-label={`View photo in gallery: ${item.caption}`}
+                style={{ display: "block", position: "relative" }}
+              >
+                <Image
+                  src={item.src}
+                  alt={`${item.caption} - Somu Holidays tour and fleet gallery`}
+                  title={`${item.caption} - Somu Holidays Bangalore`}
+                  fill
+                  sizes="(min-width: 1024px) 16vw, 33vw"
+                />
+              </Link>
             </Reveal>
           ))}
         </div>

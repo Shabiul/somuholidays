@@ -14,11 +14,11 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Travel & Fleet Rental Blog | Road Trips & Bus Hire Bangalore",
   description:
-    "Expert travel guides, 21-seater bus rental tips, vehicle comparison guides, and top weekend road trip itineraries from Bangalore by Somu Holidays.",
+    "Expert travel guides, 21-seater and 25-seater luxury bus rental tips, vehicle comparison guides, and top weekend road trip itineraries from Bangalore by Somu Holidays.",
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "Travel & Bus Rental Blog | Somu Holidays Bangalore",
-    description: "Guides to 21-seater bus rentals, car hire rates, and Karnataka road trips.",
+    description: "Guides to 21-seater & 25-seater bus rentals, car hire rates, and Karnataka road trips.",
     url: `${SITE.url}/blog`,
     type: "website",
   },
@@ -29,7 +29,7 @@ export default function BlogIndexPage() {
     "@context": "https://schema.org",
     "@type": "Blog",
     name: "Somu Holidays Travel & Fleet Blog",
-    description: "Insights on 21-seater bus rentals, road trip itineraries, and vehicle hire in Bangalore.",
+    description: "Insights on 21-seater and 25-seater bus rentals, road trip itineraries, and vehicle hire in Bangalore.",
     url: `${SITE.url}/blog`,
     publisher: {
       "@type": "TravelAgency",
@@ -71,7 +71,7 @@ export default function BlogIndexPage() {
             </span>
             <h1 className="display">Travel Insights, Bus Guides &amp; Route Tips</h1>
             <p>
-              Practical road trip advice, vehicle selection breakdowns, and 21-seater bus hire guides from Bangalore&apos;s
+              Practical road trip advice, vehicle selection breakdowns, and 21 and 25-seater luxury bus hire guides from Bangalore&apos;s
               trusted tour and rental operator.
             </p>
           </div>

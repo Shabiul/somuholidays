@@ -32,15 +32,22 @@ export default function FleetHero() {
       <div className={styles.light}>
         <div className={`container ${styles.photoRow}`}>
           <Reveal className={styles.photoWrap}>
-            <div className={styles.photo}>
+            <Link
+              href="/fleet#fleet-grid"
+              className={styles.photo}
+              title="Somu Holidays fleet of Innova Crysta, sedans and tourist buses in Bengaluru"
+              aria-label="Browse full vehicle fleet"
+              style={{ display: "block", position: "relative" }}
+            >
               <Image
                 src="/our fleet card.jpeg"
                 alt="Somu Holidays fleet of Innova, Innova Crysta and 21 and 25 seater AC buses for hire in Bengaluru"
+                title="Somu Holidays Vehicle Fleet - Bengaluru"
                 fill
                 sizes="(min-width: 768px) 640px, 92vw"
                 priority
               />
-            </div>
+            </Link>
             <div className={styles.badge} aria-hidden="true">
               <svg viewBox="0 0 140 140" className={styles.badgeSpin}>
                 <circle cx="70" cy="70" r="68" />

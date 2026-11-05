@@ -69,9 +69,21 @@ export default function ServiceAreasMap() {
           <div className={styles.cityGrid}>
             {CITIES.map((c, i) => (
               <Reveal key={c.slug} delay={i * 0.06} className={styles.cityCard}>
-                <div className={styles.cityPhoto}>
-                  <Image src={unsplash(c.img, 400)} alt={`${c.name} - destination reached by Somu Holidays cab and bus from Bengaluru`} fill sizes="88px" />
-                </div>
+                <Link
+                  href={`/destinations/${c.slug}`}
+                  className={styles.cityPhoto}
+                  title={`Holiday tour package to ${c.name} from Bengaluru`}
+                  aria-label={`View tour itinerary for ${c.name}`}
+                  style={{ display: "block", position: "relative" }}
+                >
+                  <Image
+                    src={unsplash(c.img, 400)}
+                    alt={`${c.name} - destination reached by Somu Holidays cab and bus from Bengaluru`}
+                    title={`${c.name} Tour Package - Somu Holidays`}
+                    fill
+                    sizes="88px"
+                  />
+                </Link>
                 <div>
                   <Link href={`/destinations/${c.slug}`} className={styles.cityName}>
                     {c.name}

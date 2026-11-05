@@ -51,32 +51,30 @@ export default function DestinationsPreview({ limit }: { limit?: number }) {
               className={i === 0 ? styles.tall : undefined}
               style={{ height: "100%" }}
             >
-              <EnquiryModal
-                destinationName={d.name}
-                triggerClassName={styles.card}
-                ariaLabel={`Book a cab to ${d.name}`}
-                triggerLabel={
-                  <>
-                    <Image
-                      src={unsplash(d.heroImg, i === 0 ? 1000 : 900)}
-                      alt={`${d.name} holiday tour package and outstation cab destination from Bangalore`}
-                      title={`${d.name} (${d.category}) - Somu Holidays Bangalore`}
-                      fill
-                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    />
-                    <div className={styles.info}>
-                      <div>
-                        <span className={styles.cat}>{d.category}</span>
-                        <h3>{d.name}</h3>
-                        <div className={styles.meta}>{d.meta}</div>
-                      </div>
-                      <span className={styles.go}>
-                        <Icon name="arrowUpRight" size={18} />
-                      </span>
-                    </div>
-                  </>
-                }
-              />
+              <Link
+                href={`/destinations/${d.slug}`}
+                className={styles.card}
+                title={`${d.name} Tour Package & Cab Booking from Bangalore`}
+                aria-label={`View ${d.name} holiday tour package details and itinerary`}
+              >
+                <Image
+                  src={unsplash(d.heroImg, i === 0 ? 1000 : 900)}
+                  alt={`${d.name} holiday tour package and outstation cab destination from Bangalore`}
+                  title={`${d.name} (${d.category}) - Somu Holidays Bangalore`}
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                />
+                <div className={styles.info}>
+                  <div>
+                    <span className={styles.cat}>{d.category}</span>
+                    <h3>{d.name}</h3>
+                    <div className={styles.meta}>{d.meta}</div>
+                  </div>
+                  <span className={styles.go}>
+                    <Icon name="arrowUpRight" size={18} />
+                  </span>
+                </div>
+              </Link>
             </Reveal>
           ))}
         </div>

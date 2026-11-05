@@ -18,9 +18,21 @@ export default function AdventureBand() {
             match.
           </p>
           <div className={styles.contact}>
-            <div className={styles.photo}>
-              <Image src="/about card.jpeg" alt="Somu Holidays team and fleet in Bengaluru" fill sizes="64px" />
-            </div>
+            <Link
+              href="/about"
+              className={styles.photo}
+              title="Somu Holidays tour team and fleet in Bengaluru"
+              aria-label="Learn more about Somu Holidays team and fleet"
+              style={{ display: "block", position: "relative" }}
+            >
+              <Image
+                src="/about card.jpeg"
+                alt="Somu Holidays team and fleet in Bengaluru"
+                title="Somu Holidays Tour Operations Team - Bengaluru"
+                fill
+                sizes="64px"
+              />
+            </Link>
             <div>
               <Link href="/contact#book" className={`btn btnPrimary ${styles.btn}`}>
                 Enquire Now <Icon name="arrow" size={16} />

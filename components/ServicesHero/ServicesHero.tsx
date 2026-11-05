@@ -29,15 +29,22 @@ export default function ServicesHero() {
       <div className={styles.light}>
         <div className={`container ${styles.photoRow}`}>
           <Reveal className={styles.photoWrap}>
-            <div className={styles.photo}>
+            <Link
+              href="/fleet"
+              className={styles.photo}
+              title="Luxury Toyota Innova Crysta Interior - Somu Holidays Bangalore"
+              aria-label="View our luxury fleet and vehicle interiors"
+              style={{ display: "block", position: "relative" }}
+            >
               <Image
                 src="/CRYSTA INTERIOR.jpeg"
-                alt="Interior of a Somu Holidays Innova Crysta with leather seats"
+                alt="Interior of a Somu Holidays Innova Crysta with luxury captain seats in Bangalore"
+                title="Toyota Innova Crysta Luxury Interior - Somu Holidays"
                 fill
                 sizes="(min-width: 768px) 640px, 92vw"
                 priority
               />
-            </div>
+            </Link>
             <div className={styles.badge} aria-hidden="true">
               <svg viewBox="0 0 140 140" className={styles.badgeSpin}>
                 <circle cx="70" cy="70" r="68" />

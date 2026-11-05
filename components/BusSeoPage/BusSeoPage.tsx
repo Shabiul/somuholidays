@@ -176,14 +176,14 @@ export default function BusSeoPage({ page }: { page: BusSeoPageData }) {
               <h2 className="srOnly">{kw}: photos of our buses</h2>
               {PHOTOS.map((ph) => (
                 <figure key={ph.src} className={styles.photo}>
-                  <Link href={ph.href} className={styles.photoLink} title={ph.link}>
+                  <Link href={ph.href} className={styles.photoLink} title={ph.caption || ph.link} aria-label={ph.caption || ph.link}>
                     <span className={styles.photoFrame}>
-                      <Image src={ph.src} alt={ph.alt} fill sizes="(min-width: 768px) 33vw, 100vw" />
+                      <Image src={ph.src} alt={ph.alt} title={ph.caption || ph.alt} fill sizes="(min-width: 768px) 33vw, 100vw" />
                     </span>
                   </Link>
                   <figcaption>
                     <h3>{ph.caption}</h3>
-                    <Link href={ph.href}>{ph.link}</Link>
+                    <Link href={ph.href} title={ph.link}>{ph.link}</Link>
                   </figcaption>
                 </figure>
               ))}

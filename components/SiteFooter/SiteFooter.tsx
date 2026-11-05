@@ -13,8 +13,15 @@ export default function SiteFooter() {
       <div className="container">
         <div className={styles.grid}>
           <div className={styles.about}>
-            <Link href="/" className={styles.brand}>
-              <Image src="/logo.jpeg" alt="Somu Holidays logo" width={44} height={44} className={styles.brandMark} />
+            <Link href="/" className={styles.brand} title="Somu Holidays Tours & Travels Home" aria-label="Somu Holidays Home">
+              <Image
+                src="/logo.jpeg"
+                alt="Somu Holidays Tours and Travels Bengaluru official brand mark"
+                title="Somu Holidays Tours and Travels"
+                width={44}
+                height={44}
+                className={styles.brandMark}
+              />
               <span className={styles.brandText}>
                 <strong>SOMU HOLIDAYS</strong>
                 <span>Tours &amp; Travels</span>

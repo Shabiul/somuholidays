@@ -34,9 +34,21 @@ export default function ServicesTimeline() {
             <Reveal key={s.title} delay={i * 0.06} className={styles.row}>
               <div className={styles.dot} aria-hidden="true" />
               <div className={styles.card}>
-                <div className={styles.photo}>
-                  <Image src={s.img} alt={`${s.title} - Somu Holidays travel service step`} fill sizes="(min-width: 640px) 220px, 140px" />
-                </div>
+                <Link
+                  href="/services"
+                  className={styles.photo}
+                  title={`${s.title} - Somu Holidays Bangalore`}
+                  aria-label={`Learn more about ${s.title}`}
+                  style={{ display: "block", position: "relative" }}
+                >
+                  <Image
+                    src={s.img}
+                    alt={`${s.title} - Somu Holidays travel service step`}
+                    title={`${s.title} - Somu Holidays`}
+                    fill
+                    sizes="(min-width: 640px) 220px, 140px"
+                  />
+                </Link>
                 <div className={styles.cardBody}>
                   <span className={styles.num}>{String(i + 1).padStart(2, "0")}</span>
                   <h3>{s.title}</h3>

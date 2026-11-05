@@ -17,14 +17,20 @@ export default function PackageCard({ destination }: { destination: DestinationP
 
   return (
     <div className={styles.card}>
-      <Image
-        src={unsplash(destination.heroImg)}
-        alt={imgAlt}
-        title={imgTitle}
-        fill
-        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-        className={styles.img}
-      />
+      <Link
+        href={`/destinations/${destination.slug}`}
+        title={`View full itinerary and rates for ${destination.name}`}
+        aria-label={`View ${destination.name} package details and itinerary`}
+      >
+        <Image
+          src={unsplash(destination.heroImg)}
+          alt={imgAlt}
+          title={imgTitle}
+          fill
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+          className={styles.img}
+        />
+      </Link>
       <Link
         href={`/destinations/${destination.slug}`}
         className={styles.clickArea}

@@ -107,10 +107,15 @@ export default function ServicesSection({ limit }: { limit?: number }) {
                   </Link>
                 </div>
                 <div className={styles.avatarWrap}>
-                  <div className={styles.avatar}>
+                  <Link
+                    href="/services"
+                    className={styles.avatar}
+                    title={`Explore ${service.title} - Somu Holidays`}
+                    aria-label={`Explore ${service.title} details`}
+                  >
                     <Image
                       src={service.img.startsWith("/") ? service.img : unsplash(service.img, 300)}
-                      alt={`${service.title} badge`}
+                      alt={`${service.title} badge - Somu Holidays`}
                       title={service.title}
                       fill
                       sizes="92px"
@@ -118,7 +123,7 @@ export default function ServicesSection({ limit }: { limit?: number }) {
                     <span className={styles.avatarBadge}>
                       <Icon name={service.icon} size={14} />
                     </span>
-                  </div>
+                  </Link>
                   <span className={styles.tag}>{service.tag}</span>
                 </div>
                 <div className={styles.body}>

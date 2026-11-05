@@ -31,15 +31,22 @@ export default function AboutHero() {
       <div className={styles.light}>
         <div className={`container ${styles.photoRow}`}>
           <Reveal className={styles.photoWrap}>
-            <div className={styles.photo}>
+            <Link
+              href="/fleet"
+              className={styles.photo}
+              title="Somu Holidays vehicle fleet and tour coaches in Rajajinagar, Bengaluru"
+              aria-label="View Somu Holidays vehicle fleet in Rajajinagar, Bengaluru"
+              style={{ display: "block", position: "relative" }}
+            >
               <Image
                 src="/about card.jpeg"
                 alt="Somu Holidays buses and cars parked together at the Rajajinagar base, Bengaluru"
+                title="Somu Holidays Fleet Headquarters - Rajajinagar, Bengaluru"
                 fill
                 sizes="(min-width: 768px) 640px, 92vw"
                 priority
               />
-            </div>
+            </Link>
             <div className={styles.badge} aria-hidden="true">
               <svg viewBox="0 0 140 140" className={styles.badgeSpin}>
                 <circle cx="70" cy="70" r="68" />

@@ -225,14 +225,25 @@ export default async function BlogPostPage({ params }: { params: PageParams }) {
                     >
                       <Icon name="whatsapp" size={18} /> Chat on WhatsApp
                     </a>
-                    <Link
-                      href="/21-seater-bus-rental-bangalore"
-                      className="btn btnForest"
-                      title="View 21 Seater Bus Rental Rates and Specs"
-                      aria-label="View 21 Seater Bus Rental Rates and Specs"
-                    >
-                      21-Seater Bus Rates <Icon name="arrow" size={16} />
-                    </Link>
+                    {post.slug.includes("25-seater") ? (
+                      <Link
+                        href="/fleet"
+                        className="btn btnForest"
+                        title="View 25 Seater Bus Rental Rates and Fleet Specs"
+                        aria-label="View 25 Seater Bus Rental Rates and Fleet Specs"
+                      >
+                        25-Seater Bus Rates <Icon name="arrow" size={16} />
+                      </Link>
+                    ) : (
+                      <Link
+                        href="/21-seater-bus-rental-bangalore"
+                        className="btn btnForest"
+                        title="View 21 Seater Bus Rental Rates and Specs"
+                        aria-label="View 21 Seater Bus Rental Rates and Specs"
+                      >
+                        21-Seater Bus Rates <Icon name="arrow" size={16} />
+                      </Link>
+                    )}
                   </div>
                 </div>
               </article>

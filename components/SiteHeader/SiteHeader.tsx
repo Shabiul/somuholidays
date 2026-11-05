@@ -66,8 +66,16 @@ export default function SiteHeader({ alwaysSolid = false }: { alwaysSolid?: bool
         className={`${styles.header} ${scrolled ? (dark ? styles.scrolled : styles.scrolledLight) : ""}`}
       >
         <div className={`container ${styles.nav}`}>
-          <Link href="/" className={styles.brand} aria-label="Somu Holidays home">
-            <Image src="/logo.jpeg" alt="Somu Holidays logo" width={44} height={44} className={styles.brandMark} priority />
+          <Link href="/" className={styles.brand} aria-label="Somu Holidays home" title="Somu Holidays Tours & Travels Home">
+            <Image
+              src="/logo.jpeg"
+              alt="Somu Holidays Tours and Travels Bengaluru official logo"
+              title="Somu Holidays Tours and Travels"
+              width={44}
+              height={44}
+              className={styles.brandMark}
+              priority
+            />
             <span className={styles.brandText}>
               <strong>SOMU HOLIDAYS</strong>
               <span>Tours &amp; Travels</span>
@@ -117,8 +125,15 @@ export default function SiteHeader({ alwaysSolid = false }: { alwaysSolid?: bool
             transition={{ duration: 0.45, ease: [0.22, 0.8, 0.24, 1] }}
           >
             <div className={styles.drawerHead}>
-              <Link href="/" className={styles.brand} onClick={() => setOpen(false)}>
-                <Image src="/logo.jpeg" alt="Somu Holidays logo" width={44} height={44} className={styles.brandMark} />
+              <Link href="/" className={styles.brand} onClick={() => setOpen(false)} title="Somu Holidays Home" aria-label="Somu Holidays Home">
+                <Image
+                  src="/logo.jpeg"
+                  alt="Somu Holidays Tours and Travels logo"
+                  title="Somu Holidays Tours and Travels"
+                  width={44}
+                  height={44}
+                  className={styles.brandMark}
+                />
                 <span className={styles.brandText}>
                   <strong>SOMU HOLIDAYS</strong>
                   <span>Tours &amp; Travels</span>

@@ -40,6 +40,19 @@ export function renderMarkdown(md: string): string {
       continue;
     }
 
+    // Markdown Image: ![alt](url "title") or ![alt](url)
+    const imgMatch = trimmed.match(/^!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]+)")?\)$/);
+    if (imgMatch) {
+      const alt = imgMatch[1] || "Somu Holidays travel image";
+      const src = imgMatch[2];
+      const title = imgMatch[3] || alt;
+      htmlChunks.push(
+        `<figure class="articleFigure"><a href="${src}" title="${title}" target="_blank" rel="noopener noreferrer" class="articleImageLink"><img src="${src}" alt="${alt}" title="${title}" loading="lazy" /></a><figcaption>${title}</figcaption></figure>`
+      );
+      i++;
+      continue;
+    }
+
     // Headings
     if (trimmed.startsWith("#### ")) {
       htmlChunks.push(`<h4>${parseInline(trimmed.slice(5))}</h4>`);

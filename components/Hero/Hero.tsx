@@ -28,6 +28,7 @@ export default function Hero() {
           ref={videoRef}
           poster="/crysta hill.jpg"
           aria-label="Somu Holidays Luxury Travel and Fleet in Bengaluru"
+          title="Somu Holidays Luxury Fleet and Chauffeur Driven Cabs in Bengaluru"
           autoPlay
           loop
           muted
