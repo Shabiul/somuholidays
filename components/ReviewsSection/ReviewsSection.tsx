@@ -7,58 +7,21 @@ import Reveal from "@/components/Reveal";
 import { SITE } from "@/lib/site";
 import styles from "./ReviewsSection.module.css";
 
+// Only reviews whose exact wording appears on the live Google Business Profile belong here.
+// Quote them verbatim — never reword, shorten into a different meaning, or invent text for a
+// reviewer who left a star rating without a comment. Checked against the profile on 2026-11-16.
 const REVIEWS = [
   {
     author: "Reshma B.H",
-    meta: "2 reviews · a month ago",
     text: "Professional drivers and clean cars, they mentioned that the cars are deep cleaned before every ride. Drivers are very friendly and I had a very comfortable ride with them.",
-    likes: 1,
-  },
-  {
-    author: "Pavann Kumarr",
-    meta: "a month ago",
-    text: "On time pickup and drop airport. I like it. Some holidays.",
-    likes: 1,
-  },
-  {
-    author: "Madhujeeva Madhujeeva",
-    meta: "",
-    text: "Good condition vehicle and friendly driver. I like Somu Holidays travels.",
   },
   {
     author: "Anushree R",
-    meta: "",
-    text: "Experience driver and trustworthy tours and travels...",
+    text: "Experience driver and trustworthy tours and travels",
   },
   {
     author: "Bhoja Raju",
-    meta: "",
-    text: "Best rentals in Bangalore.",
-  },
-  {
-    author: "Lohit Kumar",
-    meta: "",
-    text: "Great ride and kindly person, Madhu.",
-  },
-  {
-    author: "Manoj Kumar",
-    meta: "",
-    text: "Excellent service and well-maintained vehicles. The driver was polite, professional, and made the journey very comfortable. Highly recommended for travel in Bangalore.",
-  },
-  {
-    author: "Ramya S.B",
-    meta: "",
-    text: "Very good service and clean, comfortable vehicles. The driver was friendly and arrived on time. Had a smooth and pleasant travel experience.",
-  },
-  {
-    author: "Md Ali",
-    meta: "",
-    text: "Great service and comfortable ride. The vehicle was clean and well maintained, and the driver was very professional. Would definitely recommend them.",
-  },
-  {
-    author: "Chetan V",
-    meta: "",
-    text: "Excellent travel experience. The vehicle was in good condition and the driver was friendly and punctual. Very happy with the service.",
+    text: "Best rentals in Bangalore",
   },
 ];
 
@@ -78,8 +41,8 @@ export default function ReviewsSection() {
           <Reveal className={styles.wrap}>
             <h2 className="display h2 gradientHeadingRedWhite">See what our customers are saying</h2>
             <p className="lead" style={{ marginInline: "auto" }}>
-              Read verified reviews from past travellers on Google and JustDial, or follow our trips on Instagram
-              and Facebook.
+              Rated {SITE.googleRating.value} from {SITE.googleRating.count} Google reviews. Read every review,
+              including the critical ones, on our Google profile, or follow our trips on Instagram and Facebook.
             </p>
           </Reveal>
         </div>
@@ -105,20 +68,12 @@ export default function ReviewsSection() {
                     <div className={styles.author}>
                       <span className={styles.authorName}>
                         {r.author}
-                        <span className={styles.verified} title="Verified review">
+                        <span className={styles.verified} title="Google review">
                           <Icon name="check" size={11} />
                         </span>
                       </span>
-                      <span className={styles.meta}>{r.meta ? `${r.meta} · ` : ""}Google</span>
+                      <span className={styles.meta}>Google review</span>
                     </div>
-                    {!!r.likes && (
-                      <div className={styles.likes} aria-label={`${r.likes} like${r.likes === 1 ? "" : "s"}`}>
-                        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
-                          <path d="M12 21s-6.7-4.35-9.33-8.2C.9 10.1 1.4 6.6 4.2 5.02a5.4 5.4 0 0 1 7.14 1.5.6.6 0 0 0 1.32 0 5.4 5.4 0 0 1 7.14-1.5c2.8 1.58 3.3 5.08 1.53 7.78C18.7 16.65 12 21 12 21z" />
-                        </svg>
-                        {r.likes}
-                      </div>
-                    )}
                   </div>
                 </a>
               </div>

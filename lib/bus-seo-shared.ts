@@ -12,15 +12,16 @@ export const SPECS = [
   { title: "25-seater option", desc: "For bigger groups, a 25-seater AC bus with individual vents and ample storage at ₹38 per km." },
 ];
 
+// perHead = bus-fare estimate ÷ 21 passengers, rounded; excludes driver allowance, tolls, parking, permits.
 export const ROUTES = [
-  { dest: "Mysuru", km: 145, hrs: "about 3 hrs", est: "₹11,100 (300 km daily minimum)", note: "Mysore Palace, Brindavan Gardens and Chamundi Hills make an easy full-day group tour." },
-  { dest: "Coorg (Madikeri)", km: 260, hrs: "about 5.5 hrs", est: "about ₹19,240 on a 520 km return", note: "Coffee estates, Abbey Falls and Raja's Seat — a popular team retreat and family holiday." },
-  { dest: "Ooty and the Nilgiris", km: 275, hrs: "about 6.5 hrs", est: "about ₹20,350 on a 550 km return", note: "Scenic hill drive through the Kalhatty hairpin bends with an experienced ghat driver." },
-  { dest: "Chikmagalur", km: 245, hrs: "about 5 hrs", est: "about ₹18,130 on a 490 km return", note: "Coffee plantations, Mullayanagiri peak and waterfall stops." },
-  { dest: "Tirupati", km: 250, hrs: "about 5 hrs", est: "about ₹18,500 on a 500 km return", note: "Pilgrimage groups travelling together straight to the Alipiri and Tirumala gates." },
-  { dest: "Hampi", km: 350, hrs: "about 6.5 hrs", est: "about ₹25,900 on a 700 km return", note: "UNESCO heritage trips for colleges, cultural groups and families." },
-  { dest: "Wayanad", km: 280, hrs: "about 6 hrs", est: "about ₹20,720 on a 560 km return", note: "Rainforest stays, tea gardens and Chembra Peak. Other-state permit billed at actuals." },
-  { dest: "Gokarna and Murudeshwar", km: 490, hrs: "about 9 hrs", est: "about ₹36,260 on a 980 km return", note: "Coastal Karnataka temple-and-beach circuit for corporate and college groups." },
+  { dest: "Mysuru", perHead: 529, km: 145, hrs: "about 3 hrs", est: "₹11,100 (300 km daily minimum)", note: "Mysore Palace, Brindavan Gardens and Chamundi Hills make an easy full-day group tour." },
+  { dest: "Coorg (Madikeri)", perHead: 916, km: 260, hrs: "about 5.5 hrs", est: "about ₹19,240 on a 520 km return", note: "Coffee estates, Abbey Falls and Raja's Seat — a popular team retreat and family holiday." },
+  { dest: "Ooty and the Nilgiris", perHead: 969, km: 275, hrs: "about 6.5 hrs", est: "about ₹20,350 on a 550 km return", note: "Scenic hill drive through the Kalhatty hairpin bends with an experienced ghat driver." },
+  { dest: "Chikmagalur", perHead: 863, km: 245, hrs: "about 5 hrs", est: "about ₹18,130 on a 490 km return", note: "Coffee plantations, Mullayanagiri peak and waterfall stops." },
+  { dest: "Tirupati", perHead: 881, km: 250, hrs: "about 5 hrs", est: "about ₹18,500 on a 500 km return", note: "Pilgrimage groups travelling together straight to the Alipiri and Tirumala gates." },
+  { dest: "Hampi", perHead: 1233, km: 350, hrs: "about 6.5 hrs", est: "about ₹25,900 on a 700 km return", note: "UNESCO heritage trips for colleges, cultural groups and families." },
+  { dest: "Wayanad", perHead: 987, km: 280, hrs: "about 6 hrs", est: "about ₹20,720 on a 560 km return", note: "Rainforest stays, tea gardens and Chembra Peak. Other-state permit billed at actuals." },
+  { dest: "Gokarna and Murudeshwar", perHead: 1727, km: 490, hrs: "about 9 hrs", est: "about ₹36,260 on a 980 km return", note: "Coastal Karnataka temple-and-beach circuit for corporate and college groups." },
 ];
 
 export const ZONES = [
@@ -48,7 +49,7 @@ export const STEPS = [
 
 // Bump this whenever the rates or copy on the bus pages change. It is shown on the page
 // and sent as dateModified so search engines and AI answers see an honest freshness signal.
-export const BUS_PAGES_LAST_UPDATED = "2026-10-24";
+export const BUS_PAGES_LAST_UPDATED = "2026-11-16";
 
 export const KEY_FACTS = [
   { label: "Operator", value: "Somu Holidays Tours and Travels, Rajajinagar, Bengaluru 560010" },
@@ -61,6 +62,25 @@ export const KEY_FACTS = [
   { label: "Phone and WhatsApp", value: "+91 93809 58852" },
   { label: "Hours", value: "Open until 11 pm" },
   { label: "Google rating", value: "4.7 stars from 12 Google reviews" },
+];
+
+export const SIZING = [
+  { group: "1–4 people", vehicle: "Swift or Etios sedan", note: "From ₹13 per km." },
+  { group: "5–7 people", vehicle: "Innova (₹18/km) or Innova Crysta (₹20/km)", note: "Best for families with luggage." },
+  { group: "8–11 people", vehicle: "Two cars or the 21 seater bus", note: "Compare both: two Innova Crystas are ₹40 per km before a second driver allowance and second tolls." },
+  { group: "12–20 people", vehicle: "21 seater bus (₹37/km)", note: "Leaves seats free for luggage and legroom." },
+  { group: "21 people", vehicle: "25 seater bus (₹38/km)", note: "Book one size up so no one is squeezed and bags have room." },
+  { group: "22–25 people", vehicle: "25 seater bus (₹38/km)", note: "Seats every guest on one vehicle." },
+  { group: "More than 25 people", vehicle: "Two buses", note: "Ask us about a combined quote for two vehicles." },
+];
+
+export const TIPS = [
+  { title: "Share these details when you enquire", text: "Pickup address, drop point, date, number of passengers, and whether the trip returns the same day. With those five details we can give a close estimate without a call-back." },
+  { title: "Tell us if your lane is narrow", text: "A 21 or 25 seater bus is longer than a car. If your pickup is in a gated apartment or a narrow lane, tell us in advance so the group can board at a wider road nearby." },
+  { title: "Book early for peak dates", text: "Weekends, long weekends, festival weeks and the main wedding months (generally November to February) fill first. Booking two to three weeks ahead gives the best choice of dates and times." },
+  { title: "Start early for long trips", text: "For hill stations and temple towns, leaving between 5 and 6 AM avoids city traffic and gives the group more time at the destination." },
+  { title: "Count the real distance", text: "Add the return leg when estimating. A 300 km daily minimum applies, so a short day trip is billed as 300 km." },
+  { title: "Check cancellation terms before paying", text: "Cancellation and payment terms are agreed at booking. Ask for them in writing and read our terms page before you confirm." },
 ];
 
 export const COMPARISON = [

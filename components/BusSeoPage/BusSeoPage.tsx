@@ -10,7 +10,7 @@ import FleetSection from "@/components/FleetSection/FleetSection";
 import CtaSection from "@/components/CtaSection/CtaSection";
 import type { BusSeoPage as BusSeoPageData } from "@/lib/bus-seo-pages";
 import { SITE, waLink } from "@/lib/site";
-import { BUS_PAGES_LAST_UPDATED, KEY_FACTS, SPECS, ROUTES, ZONES, USE_CASES, STEPS, COMPARISON } from "@/lib/bus-seo-shared";
+import { BUS_PAGES_LAST_UPDATED, KEY_FACTS, SPECS, ROUTES, ZONES, USE_CASES, STEPS, COMPARISON, SIZING, TIPS } from "@/lib/bus-seo-shared";
 import styles from "./BusSeoPage.module.css";
 
 const slugify = (t: string) =>
@@ -59,6 +59,8 @@ const TOC_LABELS: Record<string, string> = {
   compare: "Compared with other options",
   steps: "How to book",
   calculator: "Cost calculator",
+  sizing: "Which size to book",
+  tips: "Booking tips",
 };
 
 export default function BusSeoPage({ page }: { page: BusSeoPageData }) {
@@ -262,7 +264,7 @@ export default function BusSeoPage({ page }: { page: BusSeoPageData }) {
               <span className="eyebrow">Popular Routes</span>
               <h2 className="display h2">{kw} for outstation trips from Bangalore</h2>
               <p className="lead">
-                Distances are one-way from Bengaluru. Estimates apply the ₹37/km rate of the 21-seater to the return
+                Distances are one-way from Bengaluru. Per-person figures divide the bus fare by 21 passengers. Estimates apply the ₹37/km rate of the 21-seater to the return
                 distance and are indicative only; the 300 km daily minimum, ₹800 daily driver allowance, tolls, parking
                 and permits are extra, and your written quote is final.
               </p>
@@ -275,6 +277,7 @@ export default function BusSeoPage({ page }: { page: BusSeoPageData }) {
                     <th>One-way</th>
                     <th>Drive time</th>
                     <th>Indicative bus cost</th>
+                    <th>Per person (21 passengers)</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -287,6 +290,7 @@ export default function BusSeoPage({ page }: { page: BusSeoPageData }) {
                       <td>{r.km} km</td>
                       <td>{r.hrs}</td>
                       <td>{r.est}</td>
+                      <td>about ₹{r.perHead.toLocaleString("en-IN")}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -388,6 +392,70 @@ export default function BusSeoPage({ page }: { page: BusSeoPageData }) {
             </ol>
           </div>
         </section>
+        )}
+
+        {page.blocks.includes("sizing") && (
+          <section id="sizing" className="section">
+            <div className="container">
+              <Reveal>
+                <span className="eyebrow">Choosing a Vehicle</span>
+                <h2 className="display h2">Which size to book: vehicle guide by group size</h2>
+                <p className="lead">
+                  Not sure whether you need a car, the 21 seater bus or the 25 seater bus? Use this guide for{" "}
+                  {page.keyword}.
+                </p>
+              </Reveal>
+              <div className={styles.tableWrap}>
+                <table className={styles.table}>
+                  <thead>
+                    <tr>
+                      <th>Group size</th>
+                      <th>Vehicle</th>
+                      <th>Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {SIZING.map((z) => (
+                      <tr key={z.group}>
+                        <td>
+                          <strong>{z.group}</strong>
+                        </td>
+                        <td>{z.vehicle}</td>
+                        <td>{z.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {page.blocks.includes("tips") && (
+          <section id="tips" className="section bgIvory50">
+            <div className="container">
+              <Reveal>
+                <span className="eyebrow">Good to Know</span>
+                <h2 className="display h2">Good to know before you book {page.keyword}</h2>
+              </Reveal>
+              <div className={styles.grid}>
+                {TIPS.map((t) => (
+                  <div key={t.title} className={styles.card}>
+                    <h3>{t.title}</h3>
+                    <p>
+                      {t.text}
+                      {t.title.startsWith("Check cancellation") && (
+                        <>
+                          {" "}
+                          <Link href="/terms">Read the terms</Link>.
+                        </>
+                      )}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
         )}
 
         <FleetSection />

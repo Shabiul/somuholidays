@@ -5,7 +5,7 @@ import { BUS_EXTRA, BUS_QUICK_ANSWERS } from "@/lib/bus-seo-extra";
 // and the copy is written for that phrase's intent so the four pages don't duplicate
 // each other. All rates/specs come from lib/fleet.ts and the 21-seater page.
 
-export type BlockId = "specs" | "routes" | "zones" | "uses" | "compare" | "steps" | "calculator";
+export type BlockId = "specs" | "routes" | "zones" | "uses" | "compare" | "steps" | "calculator" | "sizing" | "tips";
 
 export interface BusSeoPage {
   slug: string; // matches the app/ folder name
@@ -38,7 +38,7 @@ export const BUS_SEO_PAGES: Omit<BusSeoPage, "quickAnswer">[] = [
     h1: "21 Seater Bus for Hire in Bangalore",
     intro:
       "Need a 21 seater bus for hire in Bangalore? Somu Holidays supplies air-conditioned 21-seater buses with a verified chauffeur for weddings, corporate trips, pilgrimages and family tours — picked up from your doorstep in Bengaluru and billed per kilometre.",
-    blocks: ["specs", "uses"],
+    blocks: ["specs", "uses", "sizing"],
     sections: [
       {
         title: "Who hires a 21 seater bus",
@@ -97,7 +97,7 @@ export const BUS_SEO_PAGES: Omit<BusSeoPage, "quickAnswer">[] = [
     h1: "21 Seater Mini Bus Rental in Bangalore",
     intro:
       "Looking for a 21 seater mini bus rental in Bangalore with clear pricing? This page lays out exactly how our mini bus rental is charged, what a typical trip costs, and how it compares with the alternatives.",
-    blocks: ["calculator", "routes", "compare"],
+    blocks: ["calculator", "routes", "compare", "tips"],
     sections: [
       {
         title: "Mini bus rental rates",
@@ -156,7 +156,7 @@ export const BUS_SEO_PAGES: Omit<BusSeoPage, "quickAnswer">[] = [
     h1: "Mini Bus Rental Near Me — Bangalore",
     intro:
       "Searching for a mini bus rental near you in Bengaluru? Somu Holidays is based in Rajajinagar and sends 21 and 25-seater AC mini buses with a chauffeur to your door anywhere in the city.",
-    blocks: ["zones", "steps"],
+    blocks: ["zones", "steps", "sizing"],
     sections: [
       {
         title: "Where we are",
@@ -215,7 +215,7 @@ export const BUS_SEO_PAGES: Omit<BusSeoPage, "quickAnswer">[] = [
     h1: "Bus Rental Near Me — Bangalore",
     intro:
       "Need a bus rental near you in Bangalore? Somu Holidays hires out chauffeur-driven AC buses for weddings, office trips, school and college tours and pilgrimages, with doorstep pickup across Bengaluru.",
-    blocks: ["calculator", "uses", "zones"],
+    blocks: ["calculator", "uses", "zones", "tips"],
     sections: [
       {
         title: "Buses for every group",
